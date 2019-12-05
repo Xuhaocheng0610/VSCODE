@@ -1,0 +1,352 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+    font-family: 'Noto Sans TC';
+    background-color: rgb(180, 182, 185);
+}
+
+#menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 99;
+}
+
+.taiwanlogo {
+    top: -3%;
+    width: 100px;
+    position: absolute;
+    left: 10%;
+}
+
+.menuWrap {
+    max-width: 1200px;
+    margin: auto;
+    text-align: right;
+}
+
+.loginWrap {
+    /* 上下 左右 */
+    /* margin: 0px 0px; */
+    /* 上右下左 */
+    /* margin: 0px 10px 30px 0; */
+    /* 個別 */
+    margin-bottom: 10px;
+}
+
+.menuWrap li {
+    display: inline;
+}
+
+.loginWrap span {
+    margin: 0px 5px;
+    color: white;
+}
+
+.liWrap li {
+    margin-left: 10px;
+    text-align: right;
+}
+
+.menuWrap a {
+    font-family: 'Noto Sans TC';
+    text-decoration: none;
+    color: white;
+}
+
+.view {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/Taoyuan.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.view::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: #181819d5;
+}
+
+.view>p {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    font-family: 'Noto Sans TC';
+    padding: 30px 50px;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+.searchBar{
+    width: 1000px;
+    min-height: 80px;
+    position: absolute;
+    bottom: -18%;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px gray;
+}
+.locationWrap{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(187, 187, 187);;
+}
+.locationItem{
+    display: inline-block;
+    line-height: 20px;
+    padding: 20px 0;
+    margin: 0 15px;
+    color: gray;
+    border-bottom: 2px solid rgba(14, 55, 168, 0);
+    cursor: pointer;
+}
+.locationItem:nth-child(3){
+    color: rgb(14, 55, 168);
+    border-bottom: 2px solid rgb(14, 55, 168);
+}
+.locationItem:hover{
+    color: rgb(14, 55, 168);
+    border-bottom: 2px solid rgb(14, 55, 168);
+}
+.secWrap{
+    display: flex;
+    justify-content: space-around;
+}
+.secItem{
+    padding: 20px 0;
+}
+.secItem>select {
+    display: inline-block;
+    margin-top: 20px;
+    height: 30px;
+    width: 155px;
+}
+.secItem:nth-child(2)>select,.secItem:nth-child(3)>select {
+    width: 100px;
+}
+.secItem>select>option {
+    line-height: 20px;
+}
+.btnWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnWrap>a{
+    display: inline-block;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #3c7b91;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+.result{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+}
+.result>h1 {
+    font-size: 36px;
+    text-align: center;
+    color: rgb(78, 12, 7);
+    font-weight: 700;
+}
+.searchPic{
+    margin: auto;
+    margin-top: 50px;
+    width: 1000px;
+    position: relative;
+}
+.shine{
+    position: absolute;
+    padding: 10px 20px;
+    top: 50px;
+    left: -10px;
+    background-color: rgb(165, 24, 14);
+}
+.shine2 {
+    position: absolute;
+    padding: 10px 20px;
+    top: 100px;
+    left: -10px;
+    background-color: rgb(165, 24, 14);
+}
+.shine > p,.shine2 > p {
+    color: white;
+    animation: shine 1.3s linear infinite;
+}
+@keyframes shine {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    color: #232323;
+  }
+}
+.searchPic>img {
+    width: 100%;
+}
+.plan{
+    width: 1000px;
+    margin: auto;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 30px 0;
+    background-color: rgb(78, 85, 104);
+    position: relative;
+}
+.btnWarp {
+    position: absolute;
+    left: 0;
+    top: -34px;
+}
+.btnWarp > button {
+    background: #eee;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Noto Sans TC';
+    color: gray;
+}
+.btnWarp > button:hover {
+    color: #7EAED5;
+}
+.btnWarp > button:nth-child(1) {
+    color: #7EAED5;
+}
+.tablePlan {
+    width: 90%;
+    margin: auto;
+}
+th,td{
+    text-align: center;
+    line-height: 2.5;
+    color: white;
+    letter-spacing: 3px;
+}
+th {
+    font-size: 22px;
+}
+.goRightNow {
+    width: 1000px;
+    margin: auto;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 30px 0;
+    background-color: rgb(159, 167, 189);
+    position: relative; 
+}
+.goRightNow h2{
+    font-size: 36px;
+    color: rgb(78, 12, 7);
+    text-align: center;
+}
+.info {
+    margin: 20px 340px;
+    display: flex;
+    justify-content: space-between;
+}
+.info > input {
+    height: 30px;
+    width: 200px;
+}
+.infoBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.infoBtn>a {
+    display: inline-block;
+    border: 1px solid rgb(6, 6, 68);
+    padding: 10px 30px;
+    color: rgb(6, 6, 68);
+    text-decoration: none;
+}
+.likeText {
+    font-size: 36px;
+    color: rgb(78, 12, 7);
+    text-align: center;
+    margin: 40px 0;
+    font-weight: 700;
+}
+.maybeLike {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+.arrowPic {
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+.arrowPic>img{
+    width: 100%;
+}
+.likeitem {
+    display: flex;
+}
+.likeCard {
+    margin: 0 20px;
+    cursor: pointer;
+}
+.likeCard p {
+    line-height: 1.5;
+}
+.foot {
+    width: 100%;
+    height: 50px;
+    background-color: #242A3A;
+    margin-top: 20px;
+}
+.foot>p {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    line-height: 50px;
+}
+.likepicrap{
+    width: 150px;
+    height: 150px;
+}
+.likepicrap>img{
+    width: 100%;
+   
+}
+.foot {
+    width: 100%;
+    height: 50px;
+    background-color: #242A3A;
+}
+.foot>p {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    line-height: 50px;
+}
